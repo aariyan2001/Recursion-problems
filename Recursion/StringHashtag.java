@@ -25,9 +25,9 @@ public class StringHashtag {
         if(str.length()==1){
             return ""+str.charAt(0);
         }
-        //recursive call + business logic
+        //recursive call 
         String result = rephas(str.substring(1));
-
+        // business logic
         if(result.charAt(0) == str.charAt(0)){
 
             StringBuilder newstr = new StringBuilder(str);
